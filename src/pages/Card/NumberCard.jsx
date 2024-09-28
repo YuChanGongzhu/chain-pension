@@ -6,7 +6,7 @@ const NumberCard = () => {
     return (
         <Card
             size="small"
-            title="参保人数"
+            title={<span style={{ fontSize: 30 }}>参保人数100人</span>}
             extra={<a href="#"></a>}
             style={{
                 width: 400,
@@ -14,8 +14,10 @@ const NumberCard = () => {
                 backgroundColor: 'rgb(205,255,155)'
             }}
         >
-            <RiseOutlined />
-            同比增长{growth}%
+            <div style={{ height: 80 }}>
+
+            </div>
+            <span style={{ fontSize: 40 }}><RiseOutlined />同比增长{growth}%</span>
         </Card>
     )
 };

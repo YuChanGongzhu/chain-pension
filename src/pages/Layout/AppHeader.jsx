@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Layout, Avatar, Space } from 'antd';
+import { Layout, Avatar, Space, Button } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { useAppKitAccount } from '@reown/appkit/react';
 

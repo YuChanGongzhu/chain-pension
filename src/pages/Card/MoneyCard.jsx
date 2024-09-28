@@ -6,7 +6,7 @@ const MoneyCard = () => {
     return (
         <Card
             size="small"
-            title="参保总额"
+            title={<span style={{ fontSize: 30 }}>参保总额1,000,000</span>}
             extra={<a href="#"></a>}
             style={{
                 width: 400,
@@ -14,8 +14,10 @@ const MoneyCard = () => {
                 backgroundColor: 'rgb(255,255,191)'
             }}
         >
-            <RiseOutlined />
-            同比增长{growth}%
+            <div style={{ height: 80 }}>
+
+            </div>
+            <span style={{ fontSize: 40 }}><RiseOutlined />同比增长{growth}%</span>
         </Card>
     )
 };
